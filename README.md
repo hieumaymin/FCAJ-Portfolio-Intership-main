@@ -14,7 +14,7 @@ Website này là nơi mình ghi lại hành trình thực tập 2 tháng tại A
 ## 🚀 Xem trực tiếp
 
 👉 Truy cập website tại đây:  
-**https://danielleit241.github.io/aws-fcj-report/** 🎉
+**https://hieumaymin.github.io/FCAJ-Portfolio-Intership-main/** 🎉
 
 ---
 
