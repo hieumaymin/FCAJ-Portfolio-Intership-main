@@ -1,42 +1,27 @@
 ---
 title: "Workshop"
-date: "2025-09-09"
+date: 2024-01-01
 weight: 4
 chapter: false
 pre: " <b> 4. </b> "
 ---
 
-# Building a RAG Application using Knowledge Bases for Amazon Bedrock
+# Workshop: SpendWiseApp Architecture on AWS
 
-#### Overview
+This workshop goes deep into **AWS infrastructure architecture** for **SpendWiseApp**: which services are used, how the network is layered, and the security approach. **Terraform deployment by layer** (VPC through database and platform/edge operations) is covered in [4.3 Terraform deployment (by layer)](4.3-deployment-operations-monitoring/).
 
-**Knowledge Bases for Amazon Bedrock** is a fully managed feature that helps you implement RAG (Retrieval-Augmented Generation) techniques by connecting Foundation Models to your internal data sources to deliver accurate, cited, and contextually relevant responses.
+Content is grouped into the following main sections for easier navigation:
+- System overview and architecture.
+- AWS infrastructure and security foundation.
+- Terraform deployment (by layer).
+- Backend and Frontend to AWS.
+- Cost, risk, and expansion roadmap.
 
-> RAG is a technique to optimize Large Language Model (LLM) output by retrieving information from a trusted external database (Retrieval) and adding it to the context (Augmentation) before generating the answer (Generation). This method helps overcome limitations regarding outdated training data and ensures the AI answers based on the actual provided information.
+#### Content
 
-In this lab, we will learn how to build an AI assistant capable of "reading and understanding" proprietary enterprise documents. You will perform the process from data ingestion and creating vector indexes to configuring the model to answer questions based on those documents without managing any servers.
-
-We will use three main components to set up a complete RAG processing workflow:
-
-- **Data Source (Amazon S3)** - Acts as the repository of "truth". You will upload documents (PDF, Word, Text) to an S3 bucket. The Knowledge Base will use this source to synchronize data.
-- **Vector Store (OpenSearch Serverless)** - The place to store vector embeddings (numerically encoded data). When a user asks a question, the system will perform a semantic search here to extract the most relevant text segments instead of standard keyword searching.
-- **Foundation Model (Claude 3)** - The Large Language Model acting as the processing brain. It receives the user's question along with information found from the Vector Store, then synthesizes and generates a natural, accurate answer accompanied by source citations.
-
-#### Outcomes
-
-By the end of the workshop, you will have a practical, functioning Chatbot system with the following features:
-
-- Q&A chat regarding proprietary document content.
-- Accurate answers, no hallucinations.
-- Source citations (knowing exactly which page the answer comes from).
-- Rapid deployment without writing complex data processing code.
-
-#### Contents
-
-1. [Workshop Overview](4.1-Workshop-overview/)
-2. [Environment Preparation](4.2-Prerequiste/)
-3. [Create and Configure Knowledge Base](4.3-Knowledge-Base/)
-4. [Test Chatbot (RAG)](4.4-Test-Chatbox/)
-5. [Client Application Integration (Optional)](4.5-Client-Integration/)
-6. [Update Data](4.6-Cleanup/)
-7. [Clean Up Resources](4.7-Cleanup/)
+1. [4.1 System overview and architecture](4.1-system-overview-architecture/)
+2. [4.2 AWS infrastructure and security foundation](4.2-aws-infrastructure-security/)
+3. [4.3 Terraform deployment (by layer)](4.3-deployment-operations-monitoring/)
+4. [4.4 Deploy frontend and backend to AWS](4.4-build-deploy-fe-be/)
+5. [4.5 Cost, risk, and expansion roadmap](4.5-cost-risk-expansion-roadmap/)
+6. [4.6 Clean up](4.6-legacy-cleanup/)
