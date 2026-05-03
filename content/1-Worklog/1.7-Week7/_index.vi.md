@@ -16,13 +16,13 @@ pre: " <b> 1.7. </b> "
 
 | Ngày | Công việc | Bắt đầu | Hoàn thành | Tài liệu tham khảo |
 |------|----------|--------|------------|--------------------|
-| 1 | - Phân tích tài nguyên hệ thống <br>&emsp; + Theo dõi CPU và Memory của ECS <br>&emsp; + Đánh giá mức sử dụng thực tế | 20/04/2026 | 20/04/2026 | - |
-| 2 | - Tối ưu ECS Task <br>&emsp; + Điều chỉnh CPU/RAM (Right-sizing) <br>&emsp; + Giảm tài nguyên dư thừa | 21/04/2026 | 21/04/2026 | - |
-| 3 | - Thiết lập Auto-scaling <br>&emsp; + Cấu hình scale dựa trên Request từ ALB <br>&emsp; + Kiểm tra hành vi scale in/out | 22/04/2026 | 22/04/2026 | - |
-| 4 | - Phân tích logs <br>&emsp; + Sử dụng CloudWatch Logs Insights <br>&emsp; + Tạo query theo dõi lỗi 5xx | 23/04/2026 | 23/04/2026 | - |
-| 5 | - Kiểm thử khả năng tự phục hồi <br>&emsp; + Giả lập crash service <br>&emsp; + Quan sát cơ chế tự restart của ECS | 24/04/2026 | 24/04/2026 | - |
-| 6 | - Tối ưu chi phí mạng <br>&emsp; + Đánh giá NAT Gateway <br>&emsp; + So sánh với VPC Endpoint | 25/04/2026 | 25/04/2026 | - |
-| 7 | - Dọn dẹp tài nguyên <br>&emsp; + Thiết lập ECR Lifecycle Policy <br>&emsp; + Loại bỏ tài nguyên không sử dụng | 26/04/2026 | 26/04/2026 | - |
+| 1 | - Phân tích tài nguyên hệ thống <br>&emsp; + Theo dõi CPU và Memory của ECS <br>&emsp; + Đánh giá mức sử dụng thực tế | 20/04/2026 | 20/04/2026 | [ECS CloudWatch Metrics](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/cloudwatch-metrics.html), [Compute Optimizer Guide](https://docs.aws.amazon.com/compute-optimizer/latest/ug/what-is-compute-optimizer.html) |
+| 2 | - Tối ưu ECS Task <br>&emsp; + Điều chỉnh CPU/RAM (Right-sizing) <br>&emsp; + Giảm tài nguyên dư thừa | 21/04/2026 | 21/04/2026 | [ECS Task Definition Parameters](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definition_parameters.html#task_size), [Right-sizing AWS Resources](https://aws.amazon.com/aws-cost-management/aws-cost-optimization/right-sizing/) |
+| 3 | - Thiết lập Auto-scaling <br>&emsp; + Cấu hình scale dựa trên Request từ ALB <br>&emsp; + Kiểm tra hành vi scale in/out | 22/04/2026 | 22/04/2026 | [ECS Service Auto Scaling](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-auto-scaling.html), [Target Tracking Scaling Policies](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scaling-target-tracking.html) |
+| 4 | - Phân tích logs <br>&emsp; + Sử dụng CloudWatch Logs Insights <br>&emsp; + Tạo query theo dõi lỗi 5xx | 23/04/2026 | 23/04/2026 | [CloudWatch Logs Insights Syntax](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_QuerySyntax.html), [Analyzing ALB Access Logs](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-access-logs.html) |
+| 5 | - Kiểm thử khả năng tự phục hồi <br>&emsp; + Giả lập crash service <br>&emsp; + Quan sát cơ chế tự restart của ECS | 24/04/2026 | 24/04/2026 | [AWS Fault Injection Service](https://aws.amazon.com/fis/), [ECS Service Deployment Health](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployment-circuit-breaker.html) |
+| 6 | - Tối ưu chi phí mạng <br>&emsp; + Đánh giá NAT Gateway <br>&emsp; + So sánh với VPC Endpoint | 25/04/2026 | 25/04/2026 | [Reducing NAT Gateway Costs](https://aws.amazon.com/blogs/networking-and-content-delivery/how-to-reduce-costs-for-nat-gateway-usage/), [VPC Endpoint Pricing](https://aws.amazon.com/privatelink/pricing/) |
+| 7 | - Dọn dẹp tài nguyên <br>&emsp; + Thiết lập ECR Lifecycle Policy <br>&emsp; + Loại bỏ tài nguyên không sử dụng | 26/04/2026 | 26/04/2026 | [ECR Lifecycle Policies](https://docs.aws.amazon.com/AmazonECR/latest/userguide/LifecyclePolicies.html), [Terraform Lifecycle Management](https://developer.hashicorp.com/terraform/language/resources/lifecycle) |
 
 ### Kết quả đạt được Tuần 7
 
