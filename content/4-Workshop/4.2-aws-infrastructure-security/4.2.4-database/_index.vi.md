@@ -12,7 +12,7 @@ pre : " <b> 4.2.4 </b> "
 
 Có thể bố trí **RDS trên nhiều AZ** (ví dụ primary và bản **standby / backup** giữa các **private subnet** như sơ đồ) để tăng **độ sẵn sàng (HA)** và khả năng chịu lỗi. Trong **giai đoạn phát triển** thường **chỉ dùng một instance** để **tối ưu chi phí**; môi trường production có thể bật **Multi-AZ** / standby theo yêu cầu vận hành.
 
-![RDS PostgreSQL và RDS backup trong hai private subnet (minh họa HA giữa các AZ)](/images/4-Workshop/4.2.4-database-private-rds.png)
+![RDS PostgreSQL và RDS backup trong hai private subnet (minh họa HA giữa các AZ)](/images/4-workshop/4.2.4-database-private-rds.png)
 
 ### RDS PostgreSQL
 

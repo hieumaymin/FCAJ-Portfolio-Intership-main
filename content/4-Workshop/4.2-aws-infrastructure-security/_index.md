@@ -4,9 +4,8 @@ date : 2024-01-01
 weight : 2
 chapter : false
 pre : " <b> 4.2. </b> "
+disable_child_list : true
 ---
-
-## 4.2 AWS infrastructure and security foundation
 
 **Infrastructure and security.** **SpendWiseApp** on AWS Cloud follows a **three-tier pattern** suited to web workloads and **cost-conscious** scaling:
 

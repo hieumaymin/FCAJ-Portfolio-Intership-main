@@ -10,7 +10,7 @@ pre : " <b> 4.2.2 </b> "
 
 Phần này giới thiệu **AWS Amplify** cho hosting frontend và **Amazon Cognito** cho xác thực người dùng:
 
-![Người dùng → Amplify (front-end hosting); GitHub repo → Amplify; Amplify → Amazon Cognito](/images/4-Workshop/4.2.2-amplify-github-cognito.png)
+![Người dùng → Amplify (front-end hosting); GitHub repo → Amplify; Amplify → Amazon Cognito](/images/4-workshop/4.2.2-amplify-github-cognito.png)
 
 ### Amplify
 

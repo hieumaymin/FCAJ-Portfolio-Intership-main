@@ -10,7 +10,7 @@ pre : " <b> 4.2.2 </b> "
 
 This section covers **AWS Amplify** for frontend hosting and **Amazon Cognito** for user authentication:
 
-![Users to Amplify (front-end hosting); GitHub repo to Amplify; Amplify to Amazon Cognito](/images/4-Workshop/4.2.2-amplify-github-cognito.png)
+![Users to Amplify (front-end hosting); GitHub repo to Amplify; Amplify to Amazon Cognito](/images/4-workshop/4.2.2-amplify-github-cognito.png)
 
 ### Amplify
 

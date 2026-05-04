@@ -12,7 +12,7 @@ The **data tier** runs **RDS PostgreSQL** in **private data subnets** (one data 
 
 You can spread **RDS across multiple AZs** (for example a **primary** and a **standby / backup** across **private subnets** as in the diagram) to improve **availability (HA)** and fault tolerance. In **development**, a **single instance** is common to **optimize cost**; production can enable **Multi-AZ** / standby per your operational needs.
 
-![RDS PostgreSQL and RDS backup in two private subnets (HA across AZs — illustrative diagram)](/images/4-Workshop/4.2.4-database-private-rds.png)
+![RDS PostgreSQL and RDS backup in two private subnets (HA across AZs — illustrative diagram)](/images/4-workshop/4.2.4-database-private-rds.png)
 
 ### RDS PostgreSQL
 

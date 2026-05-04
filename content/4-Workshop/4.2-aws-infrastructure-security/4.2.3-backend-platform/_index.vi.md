@@ -10,7 +10,7 @@ pre : " <b> 4.2.3 </b> "
 
 Phần này trình bày **đường vào API** và **runtime backend NestJS** trong **SpendWiseApp/infrastructure**: Terraform gốc nằm ở **environments/dev/main.tf** (và **environments/prod/main.tf** cùng bố cục module); từng khối nằm dưới **modules/**.
 
-![SpendWiseApp backend VPC: CloudFront → WAF (tùy chọn) → Internet Gateway → ALB; ECS Fargate trên hai AZ; RDS PostgreSQL (primary và backup); bastion và NAT tùy chọn; ECR/ECS qua PrivateLink và S3 qua gateway VPC endpoint; CloudWatch log và cảnh báo](/images/4-Workshop/4.2.3-spendwise-backend-vpc.png)
+![SpendWiseApp backend VPC: CloudFront → WAF (tùy chọn) → Internet Gateway → ALB; ECS Fargate trên hai AZ; RDS PostgreSQL (primary và backup); bastion và NAT tùy chọn; ECR/ECS qua PrivateLink và S3 qua gateway VPC endpoint; CloudWatch log và cảnh báo](/images/4-workshop/4.2.3-spendwise-backend-vpc.png)
 
 **Nền tảng mạng:** Module **vpc** và **security_groups** cung cấp subnet (public / private app / private data) và security group cho ALB, ECS, RDS, bastion — chi tiết trong [4.2.1](../4.2.1-vpc-network/).
 

@@ -4,9 +4,8 @@ date : 2024-01-01
 weight : 2
 chapter : false
 pre : " <b> 4.2. </b> "
+disable_child_list : true
 ---
-
-## 4.2 Nền tảng hạ tầng AWS và bảo mật
 
 **Nền tảng hạ tầng và bảo mật.** **SpendWiseApp** trên AWS Cloud theo **mô hình ba tầng** phù hợp tải web/app và **mở rộng quy mô có kiểm soát chi phí**:
 

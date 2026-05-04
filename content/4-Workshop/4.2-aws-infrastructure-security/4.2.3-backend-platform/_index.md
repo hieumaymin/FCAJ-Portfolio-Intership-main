@@ -10,7 +10,7 @@ pre : " <b> 4.2.3 </b> "
 
 This section covers **API ingress** and the **NestJS backend runtime** in **SpendWiseApp/infrastructure**: root Terraform lives in **environments/dev/main.tf** (and **environments/prod/main.tf** follows the same module layout); each block is under **modules/**.
 
-![SpendWiseApp backend VPC: CloudFront → optional WAF → Internet Gateway → ALB; ECS Fargate across two AZs; RDS PostgreSQL (primary and backup); optional bastion and NAT; ECR/ECS via PrivateLink and S3 via gateway VPC endpoint; CloudWatch logs and alarms](/images/4-Workshop/4.2.3-spendwise-backend-vpc.png)
+![SpendWiseApp backend VPC: CloudFront → optional WAF → Internet Gateway → ALB; ECS Fargate across two AZs; RDS PostgreSQL (primary and backup); optional bastion and NAT; ECR/ECS via PrivateLink and S3 via gateway VPC endpoint; CloudWatch logs and alarms](/images/4-workshop/4.2.3-spendwise-backend-vpc.png)
 
 **Network foundation:** The **vpc** and **security_groups** modules provide subnets (public / private app / private data) and security groups for the ALB, ECS, RDS, and bastion — details in [4.2.1](../4.2.1-vpc-network/).
 
